@@ -15,14 +15,8 @@ export default function ProductList() {
     <section className="flex flex-col justify-center gap-6">
       <h1 className="text-cream-900 text-[2.2rem] font-[700]">Desserts</h1>
       <div className="xs:grid-cols-3 grid grid-cols-1 gap-8">
-        {products.map((prod) => (
-          <Product
-            key={prod.id}
-            category={prod.category}
-            name={prod.name}
-            price={prod.price}
-            image={prod.image}
-          />
+        {products.map((item) => (
+          <Product key={item.id} item={item} />
         ))}
       </div>
     </section>

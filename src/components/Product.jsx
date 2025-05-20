@@ -1,14 +1,19 @@
 export default function Product(props) {
   return (
     <div className="flex flex-col justify-center gap-8">
-      <picture className="relative">
-        <source media="(min-width: 1024px)" srcSet={props.image.desktop} />
-        <source media="(min-width: 580px)" srcSet={props.image.tablet} />
-        <img
-          src={props.image.mobile}
-          alt={props.name}
-          className="h-auto w-full rounded-[0.5rem]"
-        />
+      <div className="relative">
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcSet={props.item.image.desktop}
+          />
+          <source media="(min-width: 580px)" srcSet={props.item.image.tablet} />
+          <img
+            src={props.item.image.mobile}
+            alt={props.item.name}
+            className="h-auto w-full rounded-[0.5rem]"
+          />
+        </picture>
 
         <button
           type="button"
@@ -16,7 +21,7 @@ export default function Product(props) {
           className="border-cream-400 hover:border-new-red hover:text-new-red : group absolute -bottom-5 left-[22%] flex hidden h-[2.7rem] w-[10rem] cursor-pointer flex-row items-center justify-center gap-1.5 rounded-full border-1 bg-white px-6 py-2"
         >
           <img
-            src="/public/images/icon-add-to-cart.svg"
+            src="/images/icon-add-to-cart.svg"
             alt="Cart"
             className="h-auto w-5"
           />
@@ -70,15 +75,17 @@ export default function Product(props) {
             </svg>
           </button>
         </div>
-      </picture>
+      </div>
 
       <div className="flex flex-col justify-center">
         <p className="text-cream-400 text-[0.85rem] font-[500]">
-          {props.category}
+          {props.item.category}
         </p>
-        <p className="text-cream-900 text-[1rem] font-[600]">{props.name}</p>
+        <p className="text-cream-900 text-[1rem] font-[600]">
+          {props.item.name}
+        </p>
         <p className="text-new-red text-[1.02rem] font-[600]">
-          ${props.price.toFixed(2)}
+          ${props.item.price.toFixed(2)}
         </p>
       </div>
     </div>
