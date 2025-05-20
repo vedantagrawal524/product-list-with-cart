@@ -1,17 +1,11 @@
-function App() {
+import ProductList from "./components/ProductList";
+import Cart from "./components/Cart";
+
+export default function App() {
   return (
-    <>
-      <p className="font-red-hat-text flex text-6xl font-bold">
-        Desserts Waffle with Berries Waffle 6.50 Add to Cart Vanilla Bean Crème
-        Brûlée Crème Brûlée 7.00 Add to Cart Macaron Mix of Five Macaron 8.00
-        Add to Cart Classic Tiramisu Tiramisu 5.50 Add to Cart Pistachio Baklava
-        Baklava 4.00 Add to Cart Lemon Meringue Pie Pie 5.00 Add to Cart Red
-        Velvet Cake Cake 4.50 Add to Cart Salted Caramel Brownie Brownie 4.50
-        Add to Cart Vanilla Panna Cotta Panna Cotta 6.50 Add to Cart Your Cart
-        Your added items will appear here
-      </p>
-    </>
+    <main className="font-red-hat-text xs:p-8 bg-cream-50 flex min-h-screen flex-col gap-8 p-6 text-base md:p-10 lg:flex-row lg:p-20">
+      <ProductList />
+      <Cart />
+    </main>
   );
 }
-
-export default App;

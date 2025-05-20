@@ -9,4 +9,14 @@
   --font-red-hat-text: "Red Hat Text", sans-serif;
 
   --breakpoint-xs: 580px;
+
+  --color-new-red: hsl(14, 86%, 42%);
+  --color-new-green: hsl(159, 69%, 38%);
+
+  --color-cream-50: hsl(20, 50%, 98%);
+  --color-cream-100: hsl(13, 31%, 94%);
+  --color-cream-300: hsl(14, 25%, 72%);
+  --color-cream-400: hsl(7, 20%, 60%);
+  --color-cream-500: hsl(12, 20%, 44%);
+  --color-cream-900: hsl(14, 65%, 9%);
 }
