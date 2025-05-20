@@ -46,11 +46,13 @@ Users should be able to:
 
 ### Built With
 
-- React
 - HTML5  
 - CSS Flexbox & Grid  
-- Mobile-first workflow  
+- TailWind CSS
+- Javascript
+- React
 - JSON data handling  
+- Mobile-first workflow  
 - [Vercel](https://vercel.com/) for deployment
 
 ---
