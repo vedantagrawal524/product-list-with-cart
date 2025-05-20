@@ -1,6 +1,6 @@
-import { useCartContext } from "../context/CartContext";
+import { useCartContext } from "../../context/CartContext";
 import CartItem from "./CartItem";
-import { useConfirmContext } from "../context/ConfirmContext";
+import { useConfirmContext } from "../../context/ConfirmContext";
 
 export default function CartContain() {
   const { cart } = useCartContext();
@@ -25,7 +25,7 @@ export default function CartContain() {
         </p>
       </div>
 
-      <div className="bg-cream-50 text-cream-500 mt-4 flex w-[95%] flex-row items-center justify-center gap-2 self-center rounded-[0.5rem] p-3 text-center text-[0.9rem] font-[400]">
+      <div className="bg-cream-50 text-cream-500 mt-4 flex w-[95%] flex-row items-center justify-center gap-2 self-center rounded-[0.5rem] p-3 text-[0.9rem] font-[400]">
         <img src="/images/icon-carbon-neutral.svg" alt="Tree" />
         <p>
           This is a{" "}

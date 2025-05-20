@@ -1,4 +1,4 @@
-import { useCartContext } from "../context/CartContext";
+import { useCartContext } from "../../context/CartContext";
 
 export default function Product(props) {
   const { cart, addToCart, increment, decrement, dropFromCart } =
@@ -13,7 +13,7 @@ export default function Product(props) {
             media="(min-width: 1024px)"
             srcSet={props.item.image.desktop}
           />
-          <source media="(min-width: 580px)" srcSet={props.item.image.tablet} />
+          <source media="(min-width: 520px)" srcSet={props.item.image.tablet} />
           <img
             src={props.item.image.mobile}
             alt={props.item.name}

@@ -1,4 +1,4 @@
-import { useCartContext } from "../context/CartContext";
+import { useCartContext } from "../../context/CartContext";
 
 export default function CartItem(props) {
   const { dropFromCart } = useCartContext();
@@ -7,7 +7,7 @@ export default function CartItem(props) {
   return (
     <div className="border-cream-100 flex flex-row items-center justify-between border-b-2 py-3">
       <div className="flex flex-col justify-center gap-0.5">
-        <p className="text-cream-900 text-[1rem] font-[600]">
+        <p className="text-cream-900 xs:text-[1rem] text-[0.9rem] font-[600] lg:text-[0.9rem] xl:text-[1rem]">
           {props.item.name}
         </p>
 

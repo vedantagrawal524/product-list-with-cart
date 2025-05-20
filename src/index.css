@@ -8,7 +8,7 @@
 @theme {
   --font-red-hat-text: "Red Hat Text", sans-serif;
 
-  --breakpoint-xs: 580px;
+  --breakpoint-xs: 520px;
 
   --color-new-red: hsl(14, 86%, 42%);
   --color-new-green: hsl(159, 69%, 38%);

@@ -1,5 +1,5 @@
-import { useCartContext } from "../context/CartContext";
-import { useConfirmContext } from "../context/ConfirmContext";
+import { useCartContext } from "../../context/CartContext";
+import { useConfirmContext } from "../../context/ConfirmContext";
 import ConfirmItem from "./ConfirmItem";
 
 export default function ConfirmedOrder() {
