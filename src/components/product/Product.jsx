@@ -27,7 +27,6 @@ export default function Product(props) {
           <button
             onClick={() => addToCart(props.item)}
             type="button"
-            id="addToCart"
             className="border-cream-400 hover:border-new-red hover:text-new-red : group absolute right-0 -bottom-5 left-0 flex h-[2.7rem] w-[10rem] cursor-pointer flex-row items-center justify-center gap-1.5 place-self-center rounded-full border-1 bg-white px-6 py-2"
           >
             <img
@@ -35,9 +34,9 @@ export default function Product(props) {
               alt="Cart"
               className="h-auto w-5"
             />
-            <p className="text-cream-900 group-hover:text-new-red text-[0.9rem] font-[600]">
+            <span className="text-cream-900 group-hover:text-new-red text-[0.9rem] font-[600]">
               Add to Cart
-            </p>
+            </span>
           </button>
         ) : (
           <div className="bg-new-red absolute right-0 -bottom-5 left-0 flex h-[2.7rem] w-[10rem] flex-row items-center justify-between place-self-center rounded-full px-3 py-2">
