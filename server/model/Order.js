@@ -9,6 +9,7 @@ const cartItemSchema = new mongoose.Schema({
 
 const orderSchema = new mongoose.Schema({
   items: [cartItemSchema],
+  totalCartItems: { type: Number, required: true },
   totalCartValue: { type: Number, required: true },
   createdAt: { type: Date, default: Date.now },
 });

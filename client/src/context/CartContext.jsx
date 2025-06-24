@@ -25,6 +25,7 @@ export default function CartContextProvider({ children }) {
             price: item.price,
             itemPrice: item.quantity * item.price,
           })),
+          totalCartItems: cart.reduce((sum, item) => sum + item.quantity, 0),
           totalCartValue: cart.reduce(
             (sum, item) => sum + item.quantity * item.price,
             0,
