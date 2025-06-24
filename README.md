@@ -9,7 +9,8 @@ This is a solution to the [Product list with cart challenge on Frontend Mentor](
 - [Overview](#overview)  
   - [Screenshot](#screenshot)  
   - [Live Links](#live-links)  
-  - [Built With](#built-with)  
+  - [Built With](#built-with)
+  - [Backend Features](#backend-features)
 - [Author](#author)
 
 ---
@@ -29,11 +30,11 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop Active Screenshot](./public/design/active-states.jpg)
+![Desktop Active Screenshot](./client/public/design/active-states.jpg)
 
-![Desktop Order Confirmation Screenshot](./public/design/desktop-design-order-confirmation.jpg)
+![Desktop Order Confirmation Screenshot](./client/public/design/desktop-design-order-confirmation.jpg)
 
-![Mobile Selected Screenshot](./public/design/mobile-design-selected.jpg)
+![Mobile Selected Screenshot](./client/public/design/mobile-design-selected.jpg)
 
 ---
 
@@ -54,6 +55,20 @@ Users should be able to:
 - JSON data handling  
 - Mobile-first workflow  
 - [Vercel](https://vercel.com/) for deployment
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- [Render](https://render.com/) for Server deployment  
+
+---
+
+### Backend Features
+
+- Created an **Express.js server** to handle Order submissions.
+- Order submitted are stored securely in a **MongoDB database**.
+- Used **Mongoose** to define the Order schema and perform validations.
+- Hosted backend using **Render**.
 
 ---
 

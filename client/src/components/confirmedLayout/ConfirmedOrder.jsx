@@ -13,34 +13,12 @@ export default function ConfirmedOrder() {
 
   return (
     <section className="flex w-full max-w-[500px] flex-col justify-center overflow-auto rounded-[0.5rem] bg-white p-6">
-      <div className="flex flex-row items-center justify-between">
+      <div className="flex flex-row items-center justify-start">
         <img
           src="/images/icon-order-confirmed.svg"
           alt="Confirm"
           className="h-auto w-10"
         />
-
-        <button
-          onClick={() => toggleConfirm()}
-          type="button"
-          className="border-cream-300 group hover:border-cream-900 flex h-5 w-5 cursor-pointer items-center justify-center self-start rounded-full border-2 p-1"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="10"
-            height="10"
-            fill="none"
-            viewBox="0 0 10 10"
-            alt="Close Confirm Menu"
-            className="h-auto w-auto"
-          >
-            <path
-              className="group-hover:fill-cream-900"
-              fill="#CAAFA7"
-              d="M8.375 9.375 5 6 1.625 9.375l-1-1L4 5 .625 1.625l1-1L5 4 8.375.625l1 1L6 5l3.375 3.375-1 1Z"
-            />
-          </svg>
-        </button>
       </div>
       <h1 className="text-cream-900 mt-4 text-[2.2rem] leading-10 font-[700]">
         Order Confirmed

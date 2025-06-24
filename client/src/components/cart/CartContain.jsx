@@ -1,14 +1,12 @@
 import { useCartContext } from "../../context/CartContext";
 import CartItem from "./CartItem";
-import { useConfirmContext } from "../../context/ConfirmContext";
 
 export default function CartContain() {
-  const { cart } = useCartContext();
+  const { cart, saveToDatabase } = useCartContext();
   const totalAmount = cart.reduce(
     (price, next) => price + next.price * next.quantity,
     0,
   );
-  const { toggleConfirm } = useConfirmContext();
 
   return (
     <div className="flex flex-col justify-center">
@@ -35,7 +33,9 @@ export default function CartContain() {
       </div>
 
       <button
-        onClick={() => toggleConfirm()}
+        onClick={() => {
+          saveToDatabase();
+        }}
         type="button"
         className="bg-new-red text-cream-50 mt-5 w-[95%] cursor-pointer self-center rounded-full p-3.5 font-[500] hover:bg-red-800"
       >
