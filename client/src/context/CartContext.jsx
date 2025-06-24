@@ -2,10 +2,10 @@ import { createContext, useContext, useState } from "react";
 import { useConfirmContext } from "./ConfirmContext";
 
 const CartContext = createContext();
-const { toggleConfirm } = useConfirmContext();
 
 export default function CartContextProvider({ children }) {
   const [cart, setCart] = useState([]);
+  const { toggleConfirm } = useConfirmContext();
 
   function addToCart(product) {
     setCart([...cart, { ...product, quantity: 1 }]);

@@ -22,5 +22,5 @@ const submitOrder = async (req, res) => {
 };
 
 module.exports = {
-  submitCart,
+  submitOrder,
 };
